@@ -8,6 +8,7 @@ export const Body = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 export const Container = styled.div`
