@@ -10,20 +10,20 @@ export const ThemeToggle = styled.button`
   align-items: center;
   height: min-content;
   cursor: pointer;
-  color: ${(props) => props.theme.colors.toggleIdle};
+  color: ${(props) => props.theme.colors.textIdle};
 
   & > svg {
     padding-left: 16px;
   }
 
   & > svg > path {
-    fill: ${(props) => props.theme.colors.toggleIdle};
+    fill: ${(props) => props.theme.colors.textIdle};
   }
 
   &:hover {
-    color: ${(props) => props.theme.colors.toggleHover};
+    color: ${(props) => props.theme.colors.textHover};
     & > svg > path {
-      fill: ${(props) => props.theme.colors.toggleHover};
+      fill: ${(props) => props.theme.colors.textHover};
     }
   }
 `;
