@@ -10,20 +10,20 @@ export const ThemeToggle = styled.button`
   align-items: center;
   height: min-content;
   cursor: pointer;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.toggleIdle};
 
   & > svg {
     padding-left: 16px;
   }
 
   & > svg > path {
-    fill: ${(props) => props.theme.colors.text};
+    fill: ${(props) => props.theme.colors.toggleIdle};
   }
 
   &:hover {
-    color: ${(props) => props.theme.colors.textHighlight};
+    color: ${(props) => props.theme.colors.toggleHover};
     & > svg > path {
-      fill: ${(props) => props.theme.colors.textHighlight};
+      fill: ${(props) => props.theme.colors.toggleHover};
     }
   }
 `;
@@ -31,5 +31,6 @@ export const ThemeToggle = styled.button`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 16px;
 `;
