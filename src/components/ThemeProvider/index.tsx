@@ -2,9 +2,8 @@ import React from "react";
 import { ThemeProvider as SCThemeProvider } from "styled-components";
 import useTheme from "../../hooks/useTheme";
 import theme from "../../styles/theme";
-import { ThemeToggle, Body, Container, Header } from "./styles";
-import { ReactComponent as SunSVG } from "../../styles/assets/icons/icon-sun.svg";
-import { ReactComponent as MoonSVG } from "../../styles/assets/icons/icon-moon.svg";
+import Header from "../Header";
+import { Body, Container } from "./styles";
 
 type ThemeProviderProps = {
   children: JSX.Element;
@@ -17,18 +16,11 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
     return themeMode === "dark" ? theme.darkTheme : theme.lightTheme;
   };
 
-  // TODO: separate Header into a individual component
   return (
     <SCThemeProvider theme={getCurrentTheme()}>
       <Body>
         <Container>
-          <Header>
-            <div>DevFinder</div>
-            <ThemeToggle onClick={toggleTheme}>
-              {themeMode}
-              {themeMode === "dark" ? <MoonSVG /> : <SunSVG />}
-            </ThemeToggle>
-          </Header>
+          <Header themeMode={themeMode} toggleTheme={toggleTheme} />
           {children}
         </Container>
       </Body>
