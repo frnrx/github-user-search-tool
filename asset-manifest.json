@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github-user-search-tool/static/css/main.29129d2e.css",
+    "main.js": "/github-user-search-tool/static/js/main.af6f70f3.js",
+    "static/media/SpaceMono-Regular.ttf": "/github-user-search-tool/static/media/SpaceMono-Regular.f6e015c36df6af8b01db.ttf",
+    "static/media/SpaceMono-Bold.ttf": "/github-user-search-tool/static/media/SpaceMono-Bold.d33eb6c61ff51529b15c.ttf",
+    "static/media/icon-sun.svg": "/github-user-search-tool/static/media/icon-sun.831c5946a92d4365e49e470d89b6af7c.svg",
+    "static/media/icon-website.svg": "/github-user-search-tool/static/media/icon-website.47a71d70681e738653b6b5ca35935646.svg",
+    "static/media/icon-company.svg": "/github-user-search-tool/static/media/icon-company.250e999fe5d2bac36061ce0f81d8b098.svg",
+    "index.html": "/github-user-search-tool/index.html",
+    "static/media/icon-twitter.svg": "/github-user-search-tool/static/media/icon-twitter.f6a2a695fbb260b28a9fd67dd4179ea5.svg",
+    "static/media/icon-moon.svg": "/github-user-search-tool/static/media/icon-moon.cce754cec46d095fd3ce12737f38694b.svg",
+    "static/media/icon-search.svg": "/github-user-search-tool/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
+    "static/media/icon-location.svg": "/github-user-search-tool/static/media/icon-location.f11c5487a9922cbad40a27e8cc1cfaee.svg",
+    "main.29129d2e.css.map": "/github-user-search-tool/static/css/main.29129d2e.css.map",
+    "main.af6f70f3.js.map": "/github-user-search-tool/static/js/main.af6f70f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29129d2e.css",
+    "static/js/main.af6f70f3.js"
+  ]
+}
