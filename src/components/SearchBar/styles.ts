@@ -21,7 +21,7 @@ export const Input = styled.input`
   font-size: 16px;
   line-height: 24px;
   font-family: "SpaceMono";
-  width: 530px;
+  width: 400px;
   &::placeholder {
     color: ${(props) => props.theme.colors.textIdle};
     overflow: visible;
@@ -33,7 +33,7 @@ export const Input = styled.input`
   }
   @media (max-width: 768px) {
     font-size: 14px;
-    width: 210px;
+    width: 115px;
   }
 `;
 
@@ -54,7 +54,11 @@ export const Button = styled.button`
 export const ErrorMessage = styled(H3)`
   color: ${(props) => props.theme.colors.error};
   white-space: nowrap;
-  margin: 0 16px;
+  padding: 0 16px;
+  background-color: ${(props) => props.theme.colors.background2};
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export const Wrapper = styled.div`

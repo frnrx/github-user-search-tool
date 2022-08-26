@@ -4,11 +4,14 @@ import { Button, Container, ErrorMessage, Input, Wrapper } from "./styles";
 
 type SearchBarProps = {
   handleSearch: (value: string) => void;
+  loading: boolean;
   error?: boolean;
 };
 
-const SearchBar = ({ handleSearch, error }: SearchBarProps) => {
+const SearchBar = ({ handleSearch, error, loading }: SearchBarProps) => {
   const [searchValue, setSearchValue] = useState<string>("");
+
+  const disableButton = !searchValue.length;
   return (
     <Container>
       <Wrapper>
@@ -23,7 +26,12 @@ const SearchBar = ({ handleSearch, error }: SearchBarProps) => {
       </Wrapper>
       <Wrapper>
         {error && <ErrorMessage>No results</ErrorMessage>}
-        <Button onClick={() => handleSearch(searchValue)}>Search</Button>
+        <Button
+          onClick={() => handleSearch(searchValue)}
+          disabled={disableButton}
+        >
+          {loading ? "Loading..." : "Search"}
+        </Button>
       </Wrapper>
     </Container>
   );
