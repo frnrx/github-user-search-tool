@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as SearchSVG } from "../../styles/assets/icons/icon-search.svg";
+import Icon from "../Icons";
 import { Button, Container, ErrorMessage, Input, Wrapper } from "./styles";
 
 type SearchBarProps = {
@@ -12,7 +12,7 @@ const SearchBar = ({ handleSearch, error }: SearchBarProps) => {
   return (
     <Container>
       <Wrapper>
-        <SearchSVG />
+        <Icon icon="search" />
         <Input
           id="username"
           name="username"

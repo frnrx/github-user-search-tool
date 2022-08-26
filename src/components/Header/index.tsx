@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, ThemeToggle } from "./styles";
-import { ReactComponent as SunSVG } from "../../styles/assets/icons/icon-sun.svg";
-import { ReactComponent as MoonSVG } from "../../styles/assets/icons/icon-moon.svg";
 import { H1 } from "../Typography";
+import Icon from "../Icons";
 
 type HeaderProps = {
   themeMode: string;
@@ -15,7 +14,7 @@ const Header = ({ themeMode, toggleTheme }: HeaderProps) => {
       <H1>devfinder</H1>
       <ThemeToggle onClick={toggleTheme}>
         {themeMode}
-        {themeMode === "dark" ? <MoonSVG /> : <SunSVG />}
+        {themeMode === "dark" ? <Icon icon="moon" /> : <Icon icon="sun" />}
       </ThemeToggle>
     </Container>
   );
