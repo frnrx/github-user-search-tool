@@ -1,5 +1,7 @@
 import React from "react";
 import SearchBar from "../../components/SearchBar";
+import UserCard from "../../components/UserCard";
+import user from "../../mocks/user-mock.json";
 
 const DevFinder = () => {
   //WIP
@@ -10,6 +12,7 @@ const DevFinder = () => {
   return (
     <div>
       <SearchBar handleSearch={handleSearch} />
+      <UserCard user={user} />
     </div>
   );
 };
