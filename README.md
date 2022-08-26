@@ -2,6 +2,8 @@ This is GitHub user search app.
 
 Just search for any GitHub username and it will load their profile :)
 
+The website is hosted at: https://frnrx.github.io/github-user-search-tool/
+
 ## To run the app
 
 ```
