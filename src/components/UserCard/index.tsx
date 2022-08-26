@@ -10,6 +10,7 @@ import {
   GitHubInfo,
   GitHubInfoWrapper,
   PersonalLinks,
+  Name,
 } from "./styles";
 import Link from "../Link";
 import Icon from "../Icons";
@@ -57,7 +58,7 @@ const UserCard = ({ user }: UserCardProps) => {
       <Avatar src={avatar_url} alt={`${login} avatar`} />
       <ColumnWrapper>
         <RowWrapper>
-          <H1>{name || login}</H1>
+          <Name>{name || login}</Name>
           <Body>{joiningDateInfo}</Body>
         </RowWrapper>
         <Username>@{login}</Username>

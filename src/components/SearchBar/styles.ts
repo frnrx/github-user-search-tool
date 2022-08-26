@@ -21,7 +21,7 @@ export const Input = styled.input`
   font-size: 16px;
   line-height: 24px;
   font-family: "SpaceMono";
-  min-width: 250px;
+  width: 530px;
   &::placeholder {
     color: ${(props) => props.theme.colors.textIdle};
     overflow: visible;
@@ -33,7 +33,7 @@ export const Input = styled.input`
   }
   @media (max-width: 768px) {
     font-size: 14px;
-    min-width: 210px;
+    width: 210px;
   }
 `;
 

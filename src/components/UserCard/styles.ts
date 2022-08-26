@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Body, H3 } from "../Typography";
+import { Body, H3, H1 } from "../Typography";
 
 export const Container = styled.div`
   display: flex;
@@ -8,6 +8,11 @@ export const Container = styled.div`
   background-color: ${(props) => props.theme.colors.background2};
   margin-top: 16px;
   padding: 16px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+    // border-radius: unset;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -22,6 +27,9 @@ export const ColumnWrapper = styled.div`
   flex-direction: column;
   margin: 24px;
   width: 100%;
+  @media (max-width: 768px) {
+    width: unset;
+  }
 `;
 
 export const RowWrapper = styled.div`
@@ -68,4 +76,8 @@ export const PersonalLinks = styled.div`
   & > * {
     margin-top: 16px;
   }
+`;
+
+export const Name = styled(H1)`
+  margin-right: 16px;
 `;
