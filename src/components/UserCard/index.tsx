@@ -11,6 +11,7 @@ import {
   GitHubInfoWrapper,
   PersonalLinks,
   Name,
+  LocationInfo,
 } from "./styles";
 import Link from "../Link";
 import Icon from "../Icons";
@@ -84,10 +85,10 @@ const UserCard = ({ user, error }: UserCardProps) => {
         </GitHubInfoWrapper>
         <RowWrapper>
           <PersonalLinks>
-            <div>
+            <LocationInfo disabled={!location}>
               <Icon icon="location" />
               <Body>{location || "Not Available"}</Body>
-            </div>
+            </LocationInfo>
             <Link text={blog || "Not Available"} link={blog} icon="website" />
           </PersonalLinks>
           <PersonalLinks>

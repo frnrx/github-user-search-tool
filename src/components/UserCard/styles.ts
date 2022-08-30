@@ -80,3 +80,20 @@ export const PersonalLinks = styled.div`
 export const Name = styled(H1)`
   margin-right: 16px;
 `;
+
+type LocationInfoProps = {
+  disabled: boolean;
+};
+
+export const LocationInfo = styled.div<LocationInfoProps>((props) =>
+  props.disabled
+    ? `
+  & > span {
+    color: ${props.theme.colors.disabled};
+  }
+  & > svg > path {
+    fill: ${props.theme.colors.disabled};
+  }
+`
+    : null
+);
