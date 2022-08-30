@@ -10,12 +10,12 @@ const DevFinder = () => {
 
   const handleSearch = async (searchValue: string) => {
     setLoading(true);
-    setError(false);
     const searchResult = await fetchUser(searchValue);
 
     setTimeout(() => {
       if (searchResult) {
         setUser(searchResult);
+        setError(false);
       } else {
         setError(true);
       }
@@ -43,7 +43,7 @@ const DevFinder = () => {
   return (
     <div>
       <SearchBar handleSearch={handleSearch} loading={loading} error={error} />
-      {user && <UserCard user={user} />}
+      {user && <UserCard user={user} error={error} />}
     </div>
   );
 };

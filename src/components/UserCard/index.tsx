@@ -33,9 +33,10 @@ type User = {
 
 type UserCardProps = {
   user: User;
+  error?: boolean;
 };
 
-const UserCard = ({ user }: UserCardProps) => {
+const UserCard = ({ user, error }: UserCardProps) => {
   const {
     avatar_url,
     login,
@@ -52,6 +53,10 @@ const UserCard = ({ user }: UserCardProps) => {
   } = user;
   const joiningDateArray = new Date(created_at).toString().split(" ");
   const joiningDateInfo = `Joined ${joiningDateArray[2]} ${joiningDateArray[1]} ${joiningDateArray[3]}`;
+
+  if (error) {
+    return null;
+  }
 
   return (
     <Container>
